@@ -16,7 +16,9 @@ public:
         
         for (int i {0}; i < nums.size(); ++i)
         {
-            if (to_string(nums[i]).length() % 2 == 0)
+            std::string str {to_string(nums[i])};
+            
+            if (str.length() % 2 == 0)
                 ++count;
         }
         
