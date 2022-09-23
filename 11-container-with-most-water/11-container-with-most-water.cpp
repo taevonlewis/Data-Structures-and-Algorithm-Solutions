@@ -12,13 +12,13 @@ public:
             tempArea = (right - left) * min(height[left], height[right]);
             area = max(tempArea, area);
             
-            if (height[left] <= height[right])
+            if (height[left] >= height[right])
             {
-                ++left;
+                --right;
             }
             else
             {
-                --right;
+                ++left;
             }
         }
         
