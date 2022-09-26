@@ -3,23 +3,24 @@ public:
     int trap(vector<int>& height) {
         int answer {0};
         
-        int left {0};
-        int right = height.size() - 1;
-        int maxLeft { height[left] };
-        int maxRight { height[right] };
+        int i {0};
+        int j = height.size() - 1;
+        int maxLeft { height[i] };
+        int maxRight { height[j] };
         
-        while (left < right)
+        while (i < j)
         {
             if (maxLeft <= maxRight)
             {
-                ++left;
-                maxLeft = max(height[left], maxLeft);
-                answer += maxLeft - height[left];
+                ++i;
+                maxLeft = max(height[i], maxLeft);
+                answer += maxLeft - height[i];
             }
-            else {
-                --right;
-                maxRight = max(height[right], maxRight);
-                answer += maxRight - height[right];
+            else
+            {
+                --j;
+                maxRight = max(height[j], maxRight);
+                answer += maxRight - height[j];
             }
         }
         
