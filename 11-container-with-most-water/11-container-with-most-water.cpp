@@ -16,8 +16,7 @@ public:
             {
                 --right;
             }
-            else
-            {
+            else {
                 ++left;
             }
         }
