@@ -6,12 +6,12 @@ public:
         
         while (i < j)
         {
-            while (!isalnum(s[i]) && i < j)
+            while (i < j && !isalnum(s[i]))
             {
                 ++i;
             }
             
-            while (!isalnum(s[j]) && i < j)
+            while (i < j && !isalnum(s[j]))
             {
                 --j;
             }
