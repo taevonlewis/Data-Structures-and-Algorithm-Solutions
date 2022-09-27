@@ -3,17 +3,18 @@ public:
     bool isAnagram(string s, string t) {
         if (s.length() != t.length()) return false;
         
-        unordered_map<char, int> mp;
+        vector<int> count(26);
         
         for (int i {0}; i < s.length(); ++i)
         {
-            ++mp[s[i] - 'a'];
+            ++count[s[i] - 'a'];
         }
         
         for (int j {0}; j < t.length(); ++j)
         {
-            --mp[t[j] - 'a'];
-            if (mp[t[j] - 'a'] < 0)
+            --count[t[j] - 'a'];
+            
+            if (count[t[j] - 'a'] < 0)
             {
                 return false;
             }
