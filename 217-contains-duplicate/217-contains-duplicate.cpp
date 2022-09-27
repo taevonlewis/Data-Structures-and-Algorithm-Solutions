@@ -5,12 +5,12 @@ public:
         
         for (int i {0}; i < nums.size(); ++i)
         {
-            ++dupes[nums[i]];
-        }
-        
-        for (auto i : dupes)
-        {
-            if (i.second >= 2) return true;
+            if (dupes.find(nums[i]) != dupes.end())
+            {
+                return true;
+            }
+            
+            dupes[nums[i]]++;
         }
         
         return false;
