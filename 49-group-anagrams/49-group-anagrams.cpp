@@ -30,7 +30,7 @@ private:
         std::string key {""};
         for (int i {0}; i < 26; ++i)
         {
-            key.append(to_string(count[i] + 'a'));
+            key.append(to_string(count[i] - 'a'));
         }
         
         return key;
