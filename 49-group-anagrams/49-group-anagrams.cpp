@@ -10,9 +10,9 @@ public:
         }
         
         vector<vector<string>> anagrams;
-        for (auto i : mp)
+        for (auto i = mp.begin(); i != mp.end(); ++i)
         {
-            anagrams.push_back(i.second);
+            anagrams.push_back(i->second);
         }
         
         return anagrams;
