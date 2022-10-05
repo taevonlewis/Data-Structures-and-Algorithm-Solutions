@@ -1,7 +1,7 @@
 class Solution {
 public:
-    vector<vector<std::string>> groupAnagrams(vector<std::string>& strs) {
-        unordered_map<std::string, vector<std::string>> mp;
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+        unordered_map<string, vector<string>> mp;
         
         for (int i {0}; i < strs.size(); ++i)
         {
@@ -9,10 +9,11 @@ public:
             mp[key].push_back(strs[i]);
         }
         
-        vector<vector<std::string>> anagrams;
-        for (auto i = mp.begin(); i != mp.end(); ++i)
+        vector<vector<string>> anagrams;
+        
+        for (auto i : mp)
         {
-            anagrams.push_back(i->second);
+            anagrams.push_back(i.second);
         }
         
         return anagrams;
@@ -28,9 +29,10 @@ private:
         }
         
         std::string key {""};
+        
         for (int i {0}; i < 26; ++i)
         {
-            key.append(to_string(count[i] + 'a'));
+            key.append(to_string(count[i] - 'a'));
         }
         
         return key;
