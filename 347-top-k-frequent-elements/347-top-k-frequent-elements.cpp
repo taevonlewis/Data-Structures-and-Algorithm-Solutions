@@ -8,13 +8,13 @@ public:
         }
         
         vector<vector<int>> buckets(nums.size() + 1);
-        for (auto i = mp.begin(); i != mp.end(); ++i)
+        for (auto i : mp)
         {
-            buckets[i->second].push_back(i->first);
+            buckets[i.second].push_back(i.first);
         }
         
         vector<int> results;
-        for (int i = nums.size(); i >= 0; --i)
+        for (int i = buckets.size() - 1; i >= 0; --i)
         {
             if (results.size() >= k) break;
             
