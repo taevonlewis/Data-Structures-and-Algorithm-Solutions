@@ -4,25 +4,24 @@ public:
         const int cnt = 9;
         bool row[cnt][cnt] = {false};
         bool col[cnt][cnt] = {false};
-        bool sub[cnt][cnt] = {false};
+        bool subBox[cnt][cnt] = {false};
         
         for(int r = 0; r < cnt; ++r){
             for(int c = 0; c < cnt; ++c){
-                // cout << row[0][4];
                 if(board[r][c] == '.')
                     continue; // if not number pass
                 
-                int idx = board[r][c] - '0' - 1; //char to num idx
-                int area = (r/3) * 3 + (c/3);
+                int num = board[r][c] - '0' - 1; //char to num idx
+                int innerBox = (r/3) * 3 + (c/3);
                 
                 //if number already exists
-                if(row[r][idx] || col[c][idx] || sub[area][idx]){
+                if(row[r][num] || col[c][num] || subBox[innerBox][num]){
                     return false;
                 }
                 
-                row[r][idx] = true;
-                col[c][idx] = true;
-                sub[area][idx] = true;
+                row[r][num] = true;
+                col[c][num] = true;
+                subBox[innerBox][num] = true;
             }
         }
         return true;
