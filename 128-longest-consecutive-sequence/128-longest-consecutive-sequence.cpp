@@ -4,13 +4,13 @@ public:
         unordered_set<int> st(nums.begin(), nums.end());
         int longest {0};
         
-        for (int i {0}; i < nums.size(); ++i)
+        for (auto i : st)
         {
-            if (st.find(nums[i] - 1) == st.end())
+            if (!st.count(i - 1))
             {
                 int length {0};
                 
-                while (st.find(nums[i] + length) != st.end())
+                while (st.count(i + length))
                 {
                     ++length;
                 }
