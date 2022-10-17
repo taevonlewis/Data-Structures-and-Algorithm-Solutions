@@ -6,11 +6,11 @@ public:
         
         for (auto i : st)
         {
-            if (!st.count(i - 1))
+            if (st.find(i - 1) == st.end())
             {
                 int length {0};
                 
-                while (st.count(i + length))
+                while (st.find(i + length) != st.end())
                 {
                     ++length;
                 }
