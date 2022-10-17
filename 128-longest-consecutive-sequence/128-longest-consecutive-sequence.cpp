@@ -8,7 +8,7 @@ public:
         {
             if (st.find(i - 1) == st.end())
             {
-                int length {0};
+                int length {1};
                 
                 while (st.find(i + length) != st.end())
                 {
