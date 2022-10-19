@@ -42,7 +42,7 @@ public:
     
 private:
     std::string getKey(std::string str) {
-        vector<int> count(26);
+        unordered_map<int, int> count;
         for (int i {0}; i < str.length(); ++i)
         {
             ++count[str[i] - 'a'];
