@@ -7,13 +7,14 @@ public:
             ++mp[t[i]];
         }
         
+        int counter = t.size();
+        int minLength { INT_MAX };
+        int minStart {0};
+        
         int i {0};
         int j {0};
-        int minStart {0};
-        int minLength {INT_MAX};
-        int counter = t.size();
         
-        while (j < s.size())
+        while (j < s.length())
         {
             if (mp[s[j]] > 0)
             {
@@ -35,6 +36,7 @@ public:
                 {
                     ++counter;
                 }
+                
                 ++i;
             }
         }
