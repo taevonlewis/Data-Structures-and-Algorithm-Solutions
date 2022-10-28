@@ -4,7 +4,7 @@ public:
         int tempMin {prices[0]};
         int result {0};
         
-        for (int i {0}; i < prices.size(); ++i)
+        for (int i {1}; i < prices.size(); ++i)
         {
             tempMin = min(tempMin, prices[i]);
             result = max(result, prices[i] - tempMin);
