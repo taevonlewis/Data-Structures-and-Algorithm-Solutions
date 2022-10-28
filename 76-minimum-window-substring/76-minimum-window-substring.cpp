@@ -9,11 +9,9 @@ public:
         
         int i {0};
         int j {0};
-        
-        int counter = t.size();
-        
         int minStart {0};
         int minLength {INT_MAX};
+        int counter = t.size();
         
         while (j < s.size())
         {
@@ -31,14 +29,12 @@ public:
                     minStart = i;
                     minLength = j - i;
                 }
-                
                 ++mp[s[i]];
                 
-                if (mp[s[i]] > 0) 
+                if (mp[s[i]] > 0)
                 {
                     ++counter;
                 }
-                
                 ++i;
             }
         }
