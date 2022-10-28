@@ -9,17 +9,16 @@ public:
             {
                 if (st.empty()) return false;
                 
-                if (s[i] == ')' && st.top() != '(' || s[i] == '}' && st.top() != '{' || s[i] == ']' && st.top() != '[')
+                if (s[i] == ')' && st.top() != '('|| s[i] == '}' && st.top() != '{' || s[i] == ']' && st.top() != '[')
                 {
                     return false;
                 }
                 
                 st.pop();
-            } else {
-                if (s[i] == '(' || s[i] == '{' || s[i] == '[')
-                {
-                    st.push(s[i]);
-                }
+            }
+            else
+            {
+                st.push(s[i]);
             }
         }
         
