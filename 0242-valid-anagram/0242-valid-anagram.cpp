@@ -1,7 +1,7 @@
 class Solution {
 public:
-    bool isAnagram (std::string s, std::string t) {
-  std::unordered_map <char, int> m; 
+   bool isAnagram (std::string s, std::string t) {
+  std::vector<int> m(26); 
 
   if (s.size() != t.size())  {
     std::cout << "false";
@@ -9,15 +9,12 @@ public:
   }
     
   for (int i = 0; i < s.size(); i++) {
-    m[s[i]]++; 
+    m[s[i] - 'a']++; 
+    m[t[i] - 'a']--; 
   }
 
-  for (int i = 0; i < t.size(); i++) {
-    m[t[i]]--; 
-  }
-
-  for (auto i : m) {
-    if (i.second != 0) {
+  for (int i = 0; i < 26; i++) {
+    if (m[i] > 0) {
 
       std::cout << "false"; 
       return false; 
