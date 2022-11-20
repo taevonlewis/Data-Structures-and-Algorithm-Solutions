@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B30DB33F29296CE700188747 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B30DB33E29296CE700188747 /* main.cpp */; };
 		B30DB34A292973B000188747 /* two_sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B30DB348292973B000188747 /* two_sum.cpp */; };
+		B30DB34D292980B100188747 /* remove_nth_from_end_of_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B30DB34B292980B100188747 /* remove_nth_from_end_of_list.cpp */; };
+		B30DB3502929936F00188747 /* linked_list_cycle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B30DB34E2929936F00188747 /* linked_list_cycle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		B30DB33E29296CE700188747 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B30DB348292973B000188747 /* two_sum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = two_sum.cpp; sourceTree = "<group>"; };
 		B30DB349292973B000188747 /* two_sum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = two_sum.hpp; sourceTree = "<group>"; };
+		B30DB34B292980B100188747 /* remove_nth_from_end_of_list.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = remove_nth_from_end_of_list.cpp; sourceTree = "<group>"; };
+		B30DB34C292980B100188747 /* remove_nth_from_end_of_list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = remove_nth_from_end_of_list.hpp; sourceTree = "<group>"; };
+		B30DB34E2929936F00188747 /* linked_list_cycle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = linked_list_cycle.cpp; sourceTree = "<group>"; };
+		B30DB34F2929936F00188747 /* linked_list_cycle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = linked_list_cycle.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,10 @@
 			children = (
 				B30DB348292973B000188747 /* two_sum.cpp */,
 				B30DB349292973B000188747 /* two_sum.hpp */,
+				B30DB34B292980B100188747 /* remove_nth_from_end_of_list.cpp */,
+				B30DB34C292980B100188747 /* remove_nth_from_end_of_list.hpp */,
+				B30DB34E2929936F00188747 /* linked_list_cycle.cpp */,
+				B30DB34F2929936F00188747 /* linked_list_cycle.hpp */,
 			);
 			path = leetcode;
 			sourceTree = "<group>";
@@ -133,7 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B30DB34A292973B000188747 /* two_sum.cpp in Sources */,
+				B30DB34D292980B100188747 /* remove_nth_from_end_of_list.cpp in Sources */,
 				B30DB33F29296CE700188747 /* main.cpp in Sources */,
+				B30DB3502929936F00188747 /* linked_list_cycle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
