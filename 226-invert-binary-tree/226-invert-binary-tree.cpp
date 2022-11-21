@@ -15,11 +15,24 @@ public:
         if (root == NULL)
         return NULL;
         
-        swap(root->left, root->right);
+//         swap(root->left, root->right);
         
-        invertTree(root->left);
-        invertTree(root->right);
+//         invertTree(root->left);
+//         invertTree(root->right);
         
+//         return root;
+        
+        stack<TreeNode*>s;
+            s.push(root);
+            while(!s.empty()){
+                TreeNode* tmp=s.top();
+                s.pop();
+                swap(tmp->left, tmp->right);
+                if(tmp->left)
+                    s.push(tmp->left);
+                if(tmp->right)
+                    s.push(tmp->right);
+        }
         return root;
-    }
-};
+        }
+    };
