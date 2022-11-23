@@ -42,7 +42,7 @@ private:
         return true;
     }
     
-    /*      ITERATIVE SOLUTION
+    /*
 public:
     bool isValidBST(TreeNode* root) {
         stack<TreeNode*> rootStack;
