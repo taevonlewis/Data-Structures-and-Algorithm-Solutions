@@ -11,37 +11,38 @@
  */
 class Solution {
     //      RECURSIVE SOLUTION
-// public:
-//     bool isValidBST(TreeNode* root) {
-//         TreeNode* prev { NULL };
+public:
+    bool isValidBST(TreeNode* root) {
+        TreeNode* prev { NULL };
         
-//         return validateNodes(root, prev);
-//     }
+        return validateNodes(root, prev);
+    }
     
-// private:
-//     bool validateNodes(TreeNode* root, TreeNode*& prev) {
-//         if (root == NULL) return true;
+private:
+    bool validateNodes(TreeNode* root, TreeNode*& prev) {
+        if (root == NULL) return true;
         
-//         if (!validateNodes(root->left, prev))
-//         {
-//             return false;
-//         }
+        if (!validateNodes(root->left, prev))
+        {
+            return false;
+        }
         
-//         if (prev != NULL && prev->val >= root->val)
-//         {
-//             return false;
-//         }
+        if (prev != NULL && prev->val >= root->val)
+        {
+            return false;
+        }
         
-//         prev = root;
+        prev = root;
         
-//         if (!validateNodes(root->right, prev))
-//         {
-//             return false;
-//         }
+        if (!validateNodes(root->right, prev))
+        {
+            return false;
+        }
         
-//         return true;
-//     }
+        return true;
+    }
     
+    /*      ITERATIVE SOLUTION
 public:
     bool isValidBST(TreeNode* root) {
         stack<TreeNode*> rootStack;
@@ -69,4 +70,5 @@ public:
         
         return true;
     }
+    */
 };
