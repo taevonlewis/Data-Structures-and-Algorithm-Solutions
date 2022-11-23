@@ -14,6 +14,14 @@ public:
     TreeNode* invertTree(TreeNode* root) {
         if (root == NULL) return NULL;
         
+        //      RECURSIVE SOLUTION
+        swap(root->left, root->right);
+        
+        invertTree(root->left);
+        invertTree(root->right);
+        
+        
+        /*      ITERATIVE SOLUTION
         queue<TreeNode*> treeQueue;
         treeQueue.push(root);
         
@@ -34,7 +42,7 @@ public:
                 treeQueue.push(curr->right);
             }
         }
-        
+        */
         return root;
     }
 };
