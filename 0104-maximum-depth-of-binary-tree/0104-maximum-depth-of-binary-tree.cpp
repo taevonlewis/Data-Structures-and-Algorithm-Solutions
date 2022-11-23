@@ -14,10 +14,10 @@ public:
     int maxDepth(TreeNode* root) {
         if (root == NULL) return 0;
         
-            // RECURSIVE SOLUTION
-        // return 1 + max(maxDepth(root->left), maxDepth(root->right));
+        //      RECURSIVE SOLUTION
+        return 1 + max(maxDepth(root->left), maxDepth(root->right));
         
-            // ITERATIVE SOLUTION
+        /*      ITERATIVE SOLUTION
         queue<TreeNode*> treeQueue;
         treeQueue.push(root);
         
@@ -45,6 +45,7 @@ public:
             ++result;
         }
         
-        return result;
+        // return result;
+        */
     }
 };
