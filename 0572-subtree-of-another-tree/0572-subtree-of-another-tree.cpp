@@ -14,7 +14,7 @@ public:
     bool isSubtree(TreeNode* root, TreeNode* subRoot) {
         if (root == NULL) return false;
         
-        if (isSame(root, subRoot))
+        if (sameTree(root, subRoot))
         {
             return true;
         }
@@ -23,13 +23,13 @@ public:
     }
     
 private:
-    bool isSame(TreeNode* root, TreeNode* subRoot) {
+    bool sameTree(TreeNode* root, TreeNode* subRoot) {
         if (root == NULL && subRoot == NULL) return true;
         
         if (root == NULL || subRoot == NULL) return false;
         
         if (root->val != subRoot->val) return false;
         
-        return isSame(root->left, subRoot->left) && isSame(root->right, subRoot->right);
+        return sameTree(root->left, subRoot->left) && sameTree(root->right, subRoot->right);
     }
 };
