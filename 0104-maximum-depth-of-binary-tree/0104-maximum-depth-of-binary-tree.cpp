@@ -15,6 +15,36 @@ public:
         if (root == NULL) return 0;
         
             // RECURSIVE SOLUTION
-        return 1 + max(maxDepth(root->left), maxDepth(root->right));
+        // return 1 + max(maxDepth(root->left), maxDepth(root->right));
+        
+            // ITERATIVE SOLUTION
+        queue<TreeNode*> treeQueue;
+        treeQueue.push(root);
+        
+        int result {0};
+        
+        while (!treeQueue.empty())
+        {
+            int treeSize = treeQueue.size();
+            for (int i {0}; i < treeSize; ++i)
+            {
+                TreeNode* curr { treeQueue.front() };
+                treeQueue.pop();
+                
+                if (curr->left != NULL)
+                {
+                    treeQueue.push(curr->left);
+                }
+                
+                if (curr->right != NULL)
+                {
+                    treeQueue.push(curr->right);
+                }
+            }
+            
+            ++result;
+        }
+        
+        return result;
     }
 };
