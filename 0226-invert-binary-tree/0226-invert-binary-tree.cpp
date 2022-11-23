@@ -14,26 +14,10 @@ public:
     TreeNode* invertTree(TreeNode* root) {
         if (root == NULL) return NULL;
         
-        queue<TreeNode*> queue;
-        queue.push(root);
+        swap(root->left, root->right);
         
-        while(!queue.empty())
-        {
-            TreeNode* curr { queue.front() };
-            queue.pop();
-
-            swap(curr->left, curr->right);
-            
-            if (curr->right != NULL)
-            {
-                queue.push(curr->right);
-            }
-
-            if (curr->left != NULL)
-            {
-                queue.push(curr->left);
-            }
-        }
+        invertTree(root->left);
+        invertTree(root->right);
         
         return root;
     }
