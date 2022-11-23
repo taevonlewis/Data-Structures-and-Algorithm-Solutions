@@ -25,15 +25,15 @@ public:
 private:
     bool sameTree(TreeNode* root, TreeNode* subRoot) {
         //      RECURSIVE SOLUTION
-//         if (root == NULL && subRoot == NULL) return true;
+        if (root == NULL && subRoot == NULL) return true;
         
-//         if (root == NULL || subRoot == NULL) return false;
+        if (root == NULL || subRoot == NULL) return false;
         
-//         if (root->val != subRoot->val) return false;
+        if (root->val != subRoot->val) return false;
         
-//         return sameTree(root->left, subRoot->left) && sameTree(root->right, subRoot->right);
+        return sameTree(root->left, subRoot->left) && sameTree(root->right, subRoot->right);
         
-        //      ITERATIVE SOLUTION
+        /*      ITERATIVE SOLUTION
         queue<TreeNode*> treeQueue;
         treeQueue.push(root);
         treeQueue.push(subRoot);
@@ -59,5 +59,6 @@ private:
         }
         
         return true;
+        */
     }
 };
