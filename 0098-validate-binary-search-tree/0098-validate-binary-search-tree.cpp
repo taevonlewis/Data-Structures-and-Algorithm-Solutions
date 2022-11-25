@@ -12,23 +12,31 @@
 class Solution {
 public:
     bool isValidBST(TreeNode* root) {
+        if (root == NULL) return false;
+        
+        stack<TreeNode*> st;
         TreeNode* prev { NULL };
         
-        return isValid(root, prev);
-    }
-    
-private:
-    bool isValid(TreeNode* root, TreeNode*& prev) {
-        if (root == NULL) return true;
+        while (!st.empty() || root != NULL)
+        {
+            while (root != NULL)
+            {
+                st.push(root);
+                root = root->left;
+            }
+            
+            root = st.top();
+            st.pop();
+            
+            if (prev != NULL && prev->val >= root->val)
+            {
+                return false;
+            }
+            
+            prev = root;
+            root = root->right;
+        }
         
-        if (!isValid(root->left, prev)) return false;
-        
-        if (prev != NULL && prev->val >= root->val) return false;
-        
-        prev = root;
-        
-        if (!isValid(root->right, prev)) return false;
-        
-        return root;
+        return true;
     }
 };
