@@ -13,7 +13,7 @@ public:
 private:
     void middleOut(string s, int i, int j, int& result) {
         while (i >= 0 && j < s.size() && s[i] == s[j]) {
-            result++;
+            ++result;
             i--;
             j++;
         }
