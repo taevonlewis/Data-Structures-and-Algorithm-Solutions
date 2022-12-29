@@ -1,22 +1,21 @@
 class Solution {
 public:
     int climbStairs(int n) {
-        vector<int> dp(n+1);
-        
-        return climbStairsdp(n, dp);
+        vector<int> dp(n + 1);
+        return minStairs(n, dp);
     }
     
 private:
-    int climbStairsdp(int n, vector<int>& dp) {
-        if (n<2) return 1;
+    int minStairs(int n, vector<int>& dp) {
+        if (n < 2) return 1;
         
-        if (dp[n]) 
+        if (dp[n])
         {
             return dp[n];
         }
-        else 
+        else
         {
-            return dp[n] = climbStairsdp(n-1, dp) + climbStairsdp(n-2, dp);
+            return dp[n] = minStairs(n - 1, dp) + minStairs(n - 2, dp); 
         }
     }
 };
