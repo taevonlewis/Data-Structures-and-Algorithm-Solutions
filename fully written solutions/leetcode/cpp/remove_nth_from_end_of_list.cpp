@@ -45,7 +45,7 @@ RemoveListNode* removeNthFromEnd(RemoveListNode* head, int n) {
     slow->next = slow->next->next;
     
     
-    /* REVERSE AND PRINT FUNCTIONS TO VIEW LIST IN PROPER ORDER
+    /* REVERSE AND PRINT FUNCTIONS TO VIEW LIST IN PROPER ORDER */
     RemoveListNode* prev { NULL };
     RemoveListNode* curr { head };
     RemoveListNode* next { curr->next };
@@ -68,7 +68,6 @@ RemoveListNode* removeNthFromEnd(RemoveListNode* head, int n) {
         }
         prev = prev->next;
     }
-    */
     
     return head;
 }

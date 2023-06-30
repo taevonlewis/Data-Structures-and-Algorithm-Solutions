@@ -49,6 +49,6 @@ bool hasCycle(CycleListNode* head) {
         }
     }
     
-    std::cout << "fasle" << std::endl;
+    std::cout << "false" << std::endl;
     return false;
 }

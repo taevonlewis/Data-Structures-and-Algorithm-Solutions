@@ -1,10 +1,10 @@
-#include <iostream>
 #include "two_sum.hpp"
 #include "remove_nth_from_end_of_list.hpp"
 #include "linked_list_cycle.hpp"
+#include <iostream>
 
 int main() {
-    twoSum({1,2,7,9,11}, 9);
+    twoSum({2,7,11,15}, 9);
     
     RemoveListNode* removeHead { NULL };
     push(&removeHead, 1);
