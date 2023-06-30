@@ -8,9 +8,10 @@ The 'fully written solutions' folder contains problems that have been tackled fr
 
 - C++: Each problem has a corresponding **`.cpp`** file and a related header file. The header files are included in the main function, which calls all the headers. If you want to focus on a single problem, you can comment out the function calls for the other problems.
 - Python: Similarly, Python solutions are neatly encapsulated within individual **`.py`** files, following Pythonic conventions for clarity and efficiency.
-Programming Languages
 
-### The problems in this repository have been solved using:
+### Programming Languages
+
+The problems in this repository have been solved using:
 
 - C++
 - Python
