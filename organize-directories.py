@@ -37,4 +37,4 @@ def organize_files(directory):
 
 
 # organize_files('/Users/tizzymatic/Documents/GitHub/Data-Structures-and-Algorithm-Solutions/hackerrank')
-# organize_directories('/Users/tizzymatic/Documents/GitHub/Data-Structures-and-Algorithm-Solutions/leetcode/cpp')
+# organize_directories('/Users/tizzymatic/Documents/GitHub/Data-Structures-and-Algorithm-Solutions/leetcode/python')
