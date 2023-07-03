@@ -18,17 +18,10 @@ Edge Cases: if input is valid
 
 class Solution:
     def convertToTitle(self, columnNumber: int) -> str:
-        alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         res = ""
 
-        if 1 <= columnNumber <= len(alphabet):
-            res += alphabet[columnNumber - 1]
-            return res
-
-        while columnNumber != 0:
-            columnNumber -= 1
-            index = columnNumber % 26
-            res = alphabet[index] + res
-            columnNumber = columnNumber // 26
+        while columnNumber > 0:
+            res = chr(ord('A') + (columnNumber - 1) % 26) + res
+            columnNumber = (columnNumber - 1) // 26
 
         return res
