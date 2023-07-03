@@ -31,7 +31,7 @@ class Solution:
     def convertToBase7(self, num: int) -> str:
         if num == 0:
             return "0"
-            
+
         result = ""
         neg = False
         if num < 0:
@@ -43,13 +43,12 @@ class Solution:
             rem = num % 7
             num = num // 7
 
-            result += str(rem)
+            result = str(rem) + result
 
-        if neg == True:
-            result = "".join(reversed(result))
+        if neg:
             return f'-{result}'
         else:
-            return "".join(reversed(result))
+            return result
 
 
 
