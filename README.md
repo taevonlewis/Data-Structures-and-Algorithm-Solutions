@@ -40,7 +40,7 @@ Feel free to dive into the code. The aim of this repository is not just to provi
 - Breadth-First Search (BFS)
 
 **If given a linked list:**
-- Two Pointers
+- Two Pointers (possibly fast and slow pointers)
 
 **If recursion is banned:**
 - Stack
