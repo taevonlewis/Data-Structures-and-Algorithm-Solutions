@@ -21,9 +21,6 @@ Edge Cases: List length < 2, return list as is
 """
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        if head.next == None:
-            return head
-            
         slow, fast = head, head
 
         while fast != None and fast.next != None:
