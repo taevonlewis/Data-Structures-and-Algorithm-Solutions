@@ -20,12 +20,12 @@ class Solution:
 
         for num in nums:
             if num not in mp:
-                mp[num] = 1
-            else:
-                mp[num] += 1
+                mp[num] = 0
+            mp[num] += 1
         
-        for key, val in mp.items():
+        for val in mp.values():
             if val % 2 != 0:
                 return False
       
         return True
+
