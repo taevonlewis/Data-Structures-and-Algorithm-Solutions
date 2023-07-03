@@ -6,21 +6,17 @@ Output: true
 Assumptions/Constraints: no negative ints, if any ints have one occurrence = false
 Processes/Steps: 
     create hashmap
-    create res arr
     iterate over int arr
         add ints to map as key with count as value
     iterate over map
-        if key count != 2
+        if key count % 2 != 0
             return false
-        else
-            append (key, key) to res arr
     return res
 Edge Cases: 
 """
 class Solution:
     def divideArray(self, nums: List[int]) -> bool:
         mp = {}
-        res = []
 
         for num in nums:
             if num not in mp:
@@ -31,8 +27,5 @@ class Solution:
         for key, val in mp.items():
             if val % 2 != 0:
                 return False
-            else:
-                res.append((key, key))
-            
-        print(res)
+      
         return True
