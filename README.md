@@ -79,6 +79,9 @@ Feel free to dive into the code. The aim of this repository is not just to provi
 - Floyd's Cycle Finding Algorithm
 - DFS (for graph)
 
+**If numbers need to be converted from one base to another:**
+- Base Conversion
+  
 **Else:**
 - HashMap/Set for O(1) time & O(n) space
 - Sort input for O(nlogn) time and O(1) space
