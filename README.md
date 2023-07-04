@@ -58,7 +58,7 @@ The 'fully-written-solutions' folder contains problems tackled from scratch. Her
 |-----------|-----------------|------------------|
 | Depth-First Search (DFS) | O(V+E) | O(V) |
 | Breadth-First Search (BFS) | O(V+E) | O(V) |
-| Topological Sort | O(V+E) | O(V) |
+| Topological Sort (for problems involving ordering or scheduling) | O(V+E) | O(V) |
 
 ### If given a linked list
 
@@ -84,16 +84,16 @@ The 'fully-written-solutions' folder contains problems tackled from scratch. Her
 | Algorithm | Time Complexity | Space Complexity |
 |-----------|-----------------|------------------|
 | Dynamic Programming | Depends on problem | Depends on problem |
-| 0/1 Knapsack | O(nW) | O(nW) |
+| 0/1 Knapsack (for subset problems where choices are binary, selected, or not selected) | O(nW) | O(nW) |
 
 ### If asked for top/least K items
 
 | Algorithm | Time Complexity | Space Complexity |
 |-----------|-----------------|------------------|
 | Heap | O(nlogk) | O(k) |
-| Two Heaps | O(nlogk) | O(k) |
+| Two Heaps (when you need to keep track of both the smallest and largest elements) | O(nlogk) | O(k) |
 | QuickSelect | O(n), worst case O(n^2) | O(1) |
-| K-way Merge | O(nlogk) | O(k) |
+| K-way Merge (when merging K-sorted inputs) | O(nlogk) | O(k) |
 
 ### If asked for common strings
 
