@@ -86,6 +86,12 @@ The 'fully-written-solutions' folder contains problems tackled from scratch. Her
 | Dynamic Programming | Depends on problem | Depends on problem |
 | 0/1 Knapsack (for subset problems where choices are binary, selected, or not selected) | O(nW) | O(nW) |
 
+### If the problem involves computing prefix sums or queries on subarrays
+
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Prefix Sum | O(n) for initial computation, O(1) for each query | O(n) |
+
 ### If asked for top/least K items
 
 | Algorithm | Time Complexity | Space Complexity |
