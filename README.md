@@ -2,98 +2,164 @@
 
 This repository is a comprehensive collection of solutions to coding problems from various platforms including Codewars, Leetcode, Binary Search, Algo Expert, GeeksforGeeks, and others.
 
-### Repository Structure
+## Table of Contents
+1. [Programming Languages](#programming-languages)
+2. [Repository Structure](#repository-structure)
+3. [Problem-Solving Patterns](#problem-solving-patterns)
 
-The 'fully written solutions' folder contains problems tackled from scratch. Here is what you can expect:
-
-- C++: Each problem has a corresponding **`.cpp`** file and a related header file. The header files are included in the main function, which calls all the headers. If you want to focus on a single problem, you can comment out the function calls for the other problems.
-- Python: Similarly, Python solutions are neatly encapsulated within individual **`.py`** files, following Pythonic conventions for clarity and efficiency.
-
-### Programming Languages
+## Programming Languages
 
 The problems in this repository have been solved using:
 
 - C++
 - Python
+  
+## Repository Structure
 
-### Exploring the Solutions
+<details>
+<summary>Click to expand!</summary>
+  
+The 'fully-written-solutions' folder contains problems tackled from scratch. Here is what you can expect:
 
-Feel free to dive into the code. The aim of this repository is not just to provide solutions, but also to serve as a learning resource. Whether you're preparing for a technical interview, learning a new data structure, or love solving problems, there's something here for you.
+- C++: Each problem has a corresponding **`.cpp`** file and a related header file. The header files are included in the main function, which calls all the headers. If you want to focus on a single problem, you can comment out the function calls for the other problems.
+- Python: Similarly, Python solutions are neatly encapsulated within individual **`.py`** files, following Pythonic conventions for clarity and efficiency.
 
-</br>
+</details>
 
 ## Problem-Solving Patterns
 
-**If the input array is sorted:**
-- Binary Search
-- Two Pointers
-- Cyclic Sort (when dealing with numbers in a specific range, for finding missing or duplicate numbers)
+<details>
+<summary>Click to expand!</summary>
+  
+### If the input array is sorted
 
-**If asked for all permutations/subsets:**
-- Backtracking
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Binary Search | O(logn) | O(1) |
+| Two Pointers | O(n) | O(1) |
+| Cyclic Sort (when dealing with numbers in a specific range) | O(n) | O(1) |
 
-**If given a tree:**
-- Depth-First Search (DFS)
-- Breadth-First Search (BFS)
+### If asked for all permutations/subsets
 
-**If given a graph:**
-- Depth-First Search (DFS)
-- Breadth-First Search (BFS)
-- Topological Sort (for problems involving ordering or scheduling)
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Backtracking | O(n*2^n) | O(n) |
 
-**If given a linked list:**
-- Two Pointers (possibly fast and slow pointers)
-- In-place reversal of a linked list
+### If given a tree
 
-**If recursion is banned:**
-- Stack
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Depth-First Search (DFS) | O(n) | O(h) |
+| Breadth-First Search (BFS) | O(n) | O(w) |
 
-**If must solve in-place:**
-- Swap corresponding values
+### If given a graph
 
-**If asked for maximum/minimum subarray/subset/options:**
-- Dynamic Programming
-- 0/1 Knapsack (for subset problems where choices are binary, selected, or not selected)
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Depth-First Search (DFS) | O(V+E) | O(V) |
+| Breadth-First Search (BFS) | O(V+E) | O(V) |
+| Topological Sort | O(V+E) | O(V) |
 
-**If asked for top/least K items:**
-- Heap
-- Two Heaps (when you need to keep track of both the smallest and largest elements)
-- QuickSelect
-- K-way Merge (when merging K-sorted inputs)
+### If given a linked list
 
-**If asked for common strings:**
-- HashMap
-- Trie
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Two Pointers (possibly fast and slow pointers) | O(n) | O(1) |
+| In-place reversal of a linked list | O(n) | O(1) |
 
-**If given a matrix:**
-- Matrix Traversal (DFS, BFS, or simple iteration)
+### If recursion is banned
 
-**If asked to find or count a specific element/configuration in a matrix:**
-- Dynamic Programming (for counting paths, etc.)
-- DFS/BFS (for finding islands, etc.)
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Stack | O(n) | O(n) |
 
-**If asked to perform manipulations or computations on a string:**
-- Two Pointers
-- Sliding Window
-- HashMap
+### If must solve in-place
 
-**If dealing with intervals or ranges:**
-- Sort and then either merge or subtract intervals
-- Interval Tree
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Swap corresponding values | O(n) | O(1) |
 
-**If the problem is about finding a cycle or a loop:**
-- Floyd's Cycle Finding Algorithm
-- DFS (for graph)
+### If asked for maximum/minimum subarray/subset/options
 
-**If numbers need to be converted from one base to another:**
-- Base Conversion
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Dynamic Programming | Depends on problem | Depends on problem |
+| 0/1 Knapsack | O(nW) | O(nW) |
 
-**If dealing with bitwise operations:**
-- Bitwise XOR (when needing to find a number that appears once while others appear twice)
+### If asked for top/least K items
 
-**If the problem involves Fibonacci numbers:**
-- Dynamic Programming (Bottom-up calculation or memoization can optimize repeated calculations)
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Heap | O(nlogk) | O(k) |
+| Two Heaps | O(nlogk) | O(k) |
+| QuickSelect | O(n), worst case O(n^2) | O(1) |
+| K-way Merge | O(nlogk) | O(k) |
 
-**Else:**
-- HashMap/Set for O(1) time & O(n) space
-- Sort input for O(nlogn) time and O(1) space
+### If asked for common strings
+
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| HashMap | O(n+m) | O(n+m) |
+| Trie | O(n) | O(m) |
+
+### If given a matrix
+
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Matrix Traversal (DFS, BFS, or simple iteration) | O(mn) | O(mn) |
+
+### If asked to find or count a specific element/configuration in a matrix
+
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Dynamic Programming | O(mn) | O(mn) |
+| DFS/BFS | O(mn) | O(mn) |
+
+### If asked to perform manipulations or computations on a string
+
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Two Pointers | O(n) | O(1) |
+| Sliding Window | O(n) | O(1) or O(k) |
+| HashMap | O(n) | O(n) |
+
+### If dealing with intervals or ranges
+
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Sort and Merge/Subtract | O(nlogn) | O(n) |
+| Interval Tree | O(nlogn), O(logn) | O(n) |
+
+### If the problem is about finding a cycle or a loop
+
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Floyd's Cycle Finding Algorithm | O(n) | O(1) |
+| DFS (for graph) | O(V+E) | O(V) |
+
+### If numbers need to be converted from one base to another
+
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Base Conversion | O(n) | O(n) |
+
+### If dealing with bitwise operations
+
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Bitwise XOR | O(n) | O(1) |
+
+### If the problem involves Fibonacci numbers
+
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| Dynamic Programming | O(n) | O(1) or O(n) |
+
+### Else
+
+| Algorithm | Time Complexity | Space Complexity |
+|-----------|-----------------|------------------|
+| HashMap/Set | O(1) | O(n) |
+| Sort input | O(nlogn) | O(1) |
+
+</details>
