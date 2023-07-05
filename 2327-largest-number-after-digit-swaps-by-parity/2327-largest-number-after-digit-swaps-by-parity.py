@@ -13,23 +13,25 @@ Edge Cases: if input is valid
 """
 
 class Solution:
-    def largestInteger(self, num: int):
-        n = len(str(num))
-        arr = [int(i) for i in str(num)]
+    def largestInteger(self, num: int) -> int:
+        num_str = str(num)
+        n = len(num_str)
+
         odd, even = [], []
-        for i in arr:
+        for digit in num_str:
+            i = int(digit)
             if i % 2 == 0:
-                even.append(i)
+                heapq.heappush(even, -i)
             else:
-                odd.append(i)
-        odd.sort()
-        even.sort()
+                heapq.heappush(odd, -i)
+
         res = 0
-        for i in range(n):
-            if arr[i] % 2 == 0:
-                res = res*10 + even.pop()
+        for digit in num_str:
+            i = int(digit)
+            if i % 2 == 0:
+                res = res*10 - heapq.heappop(even)
             else:
-                res = res*10 + odd.pop()
+                res = res*10 - heapq.heappop(odd)
         return res
 
 
