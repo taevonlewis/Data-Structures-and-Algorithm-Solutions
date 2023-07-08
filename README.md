@@ -1,6 +1,6 @@
 ## Data Structures and Algorithm Solutions
 
-This repository is a comprehensive collection of solutions to coding problems from various platforms including Codewars, Leetcode, Binary Search, Algo Expert, GeeksforGeeks, and others.
+This repository is a comprehensive collection of solutions to coding problems from various platforms including Codewars, Leetcode, Binary Search, Algo Expert, GeeksforGeeks, and more.
 
 ## Table of Contents
 1. [Programming Languages](#programming-languages)
