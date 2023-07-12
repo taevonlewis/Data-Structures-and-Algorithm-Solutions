@@ -21,17 +21,22 @@ Edge Cases: if num is zero return 0
 
 class Solution:
     def mySqrt(self, x: int) -> int:
-        start = 0
+        if x == 0:
+            return 0
+
+        start = 1
         end = x
         res = 0
 
         while start <= end:
-            mid = math.floor((start + end) / 2)
+            mid = (start + end) // 2
 
-            if x < mid * mid:
-                end = mid - 1
-            else:
+            if mid * mid == x:
+                return mid
+            elif mid * mid < x:
                 res = mid
-                start += 1
+                start = mid + 1
+            else:
+                end = mid - 1
         
         return res
