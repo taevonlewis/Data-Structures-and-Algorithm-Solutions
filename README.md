@@ -1,6 +1,6 @@
 ## Data Structures and Algorithm Solutions
 
-This repository is a comprehensive collection of solutions to coding problems from various platforms including Codewars, Leetcode, Binary Search, Algo Expert, GeeksforGeeks, and more.
+This repository is a comprehensive collection of solutions to coding problems from various platforms including Codewars, Leetcode, HackerRank, Codility, Algo Expert, GeeksforGeeks, and more.
 
 ## Table of Contents
 1. [Programming Languages](#programming-languages)
@@ -11,6 +11,7 @@ This repository is a comprehensive collection of solutions to coding problems fr
 
 The problems in this repository have been solved using:
 
+- Swift
 - C++
 - Python
   
@@ -21,7 +22,8 @@ The problems in this repository have been solved using:
   
 The 'fully-written-solutions' folder contains problems tackled from scratch. Here is what you can expect:
 
-- C++: Each problem has a corresponding **`.cpp`** file and a related header file. The header files are included in the main function, which calls all the headers. If you want to focus on a single problem, you can comment out the function calls for the other problems.
+- Swift: For Swift, every problem has its corresponding **`.swift`** file. Swift solutions are written in a manner that promotes clarity, taking advantage of Swift's modern features for safety and readability.
+- C++: Each problem has a corresponding **`.cpp`** file and a related header file. The header files are included in the main function, which calls all the headers.
 - Python: Similarly, Python solutions are neatly encapsulated within individual **`.py`** files, following Pythonic conventions for clarity and efficiency.
 
 </details>
