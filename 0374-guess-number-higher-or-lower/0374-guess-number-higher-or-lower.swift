@@ -12,8 +12,8 @@ class Solution : GuessGame {
         var l: Int = 1
         var h: Int = n
 
-        while true {
-            let m = l + (h - l) / 2
+        while l <= h {
+            let m = (l + h) / 2
             let myGuess = guess(m)
 
             if myGuess == 1 {
