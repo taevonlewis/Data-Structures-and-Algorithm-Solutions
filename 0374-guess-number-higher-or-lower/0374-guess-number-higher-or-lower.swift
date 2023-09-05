@@ -9,19 +9,18 @@
 
 class Solution : GuessGame {
     func guessNumber(_ n: Int) -> Int {
-        var l: Int = 1
-        var h: Int = n
-
-        while l <= h {
-            let m = (l + h) / 2
-            let myGuess = guess(m)
+        var low: Int = 1
+        var high: Int = n
+        while low <= n {
+            let mid = (low + high) / 2
+            let myGuess = guess(mid)
 
             if myGuess == 1 {
-                l = m + 1
+                low = mid + 1
             } else if myGuess == -1 {
-                h = m - 1
+                high = mid - 1
             } else {
-                return m
+                return mid
             }
         }
 
