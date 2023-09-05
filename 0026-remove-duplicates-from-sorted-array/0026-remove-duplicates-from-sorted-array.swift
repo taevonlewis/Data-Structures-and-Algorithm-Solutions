@@ -1,14 +1,14 @@
 class Solution {
     func removeDuplicates(_ nums: inout [Int]) -> Int {
-        var left: Int = 0
+        var count: Int = 0
 
-        for right in 1..<nums.count {
-            if nums[left] != nums[right] {
-                left += 1
-                nums[left] = nums[right]
+        for i in 1..<nums.count {
+            if nums[i] != nums[count] {
+                count += 1
+                nums[count] = nums[i]
             }
         }
 
-        return left + 1
+        return count + 1
     }
 }
