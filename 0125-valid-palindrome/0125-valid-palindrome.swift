@@ -1,24 +1,25 @@
 class Solution {
     func isPalindrome(_ s: String) -> Bool {
-        var l: Int = 0
-        var r: Int = s.count - 1
-        let str = Array(s.lowercased())
+        var str = Array(s.lowercased())
+        var i: Int = 0
+        var j: Int = s.count - 1
 
-        while l < r {
-            while !str[l].isAlphanumeric && l < r {
-                l += 1
-            } 
-
-            while !str[r].isAlphanumeric && l < r {
-                r -= 1
+        while i < j {
+            while !str[i].isAlpha && i < j {
+                i += 1
             }
 
-            if str[l] != str[r] {
+            while !str[j].isAlpha && i < j {
+                j -= 1
+            }
+
+            if str[i] != str[j] {
+                print(str[i], str[j])
                 return false
             }
 
-            l += 1
-            r -= 1
+            i += 1
+            j -= 1 
         }
 
         return true
@@ -26,7 +27,7 @@ class Solution {
 }
 
 extension Character {
-        var isAlphanumeric: Bool {
-            return isNumber || isLetter
-        }
+    var isAlpha: Bool {
+        return isNumber || isLetter
     }
+}
