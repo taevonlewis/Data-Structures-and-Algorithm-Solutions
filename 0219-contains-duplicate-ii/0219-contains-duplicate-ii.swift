@@ -1,19 +1,19 @@
 class Solution {
     func containsNearbyDuplicate(_ nums: [Int], _ k: Int) -> Bool {
         var window: Set<Int> = []
-        var l: Int = 0
+        var left: Int = 0
 
-        for r in 0..<nums.count {
-            if r - l > k {
-                window.remove(nums[l])
-                l += 1
+        for right in 0..<nums.count {
+            if right - left > k {
+                window.remove(nums[left])
+                left += 1
             }
 
-            if window.contains(nums[r]) {
+            if window.contains(nums[right]) {
                 return true
             }
 
-            window.insert(nums[r]) 
+            window.insert(nums[right])
         }
 
         return false
