@@ -6,6 +6,7 @@ This repository is a comprehensive collection of solutions to coding problems fr
 1. [Programming Languages](#programming-languages)
 2. [Repository Structure](#repository-structure)
 3. [Problem-Solving Patterns](#problem-solving-patterns)
+4. [Coding Templates](#coding-templates)
 
 ## Programming Languages
 
@@ -171,3 +172,6 @@ The 'fully-written-solutions' folder contains problems tackled from scratch. Her
 | Sort input | O(nlogn) | O(1) |
 
 </details>
+
+## Coding Templates
+For common coding templates used in this repository, see [templates.md](./templates.md).
