@@ -1,6 +1,8 @@
-# Data Structures in Swift
-
-## Table of Contents
+## Coding Templates
+<details>
+<summary>Click to expand!</summary>
+  
+### Table of Contents
 1. [Stack](#stack)
 2. [Queue](#queue)
 3. [Linked List](#linked-list)
@@ -9,8 +11,8 @@
 
 
 
-## Stack (Last-In-First-Out or LIFO)
-A stack implemented using an array.
+### Stack
+A stack (Last-In-First-Out or LIFO) implemented using an array.
 
 ```swift
 class Stack<T> {
@@ -38,8 +40,8 @@ class Stack<T> {
 - **push(element: T)**: Adds an element to the top.
 - **pop()**: Removes and returns the top element.
 
-## Queue (FIRST-IN-FIRST-OUT or FIFO)
-A basic queue implementation.
+### Queue
+A basic queue (FIRST-IN-FIRST-OUT or FIFO) implementation.
 
 ```swift
 class Queue<T> {
@@ -70,7 +72,7 @@ class Queue<T> {
 </br>
 
 
-## Linked List
+### Linked List
 
 ### Singly Linked List
 
@@ -131,7 +133,7 @@ class LinkedList {
 - **insertEnd(val: Int)**: Adds a node at the end.
 - **remove(index: Int)**: Removes the node at a given index.
 
-### Doubly Linked List
+#### Doubly Linked List
 
 Implementation of a doubly linked list.
 
@@ -202,3 +204,5 @@ class LinkedList {
 - **insertEnd(val: Int)**: Adds a node at the end.
 
 ---
+
+</details>
