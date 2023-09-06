@@ -1,0 +1,24 @@
+name: Update README
+
+on:
+  push:
+    paths:
+      - 'templates.md'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+    - name: Update README
+      run: |
+        echo "## Templates" >> README.md
+        cat templates.md >> README.md
+    - name: Commit and push
+      run: |
+        git config user.name "GitHub Action"
+        git config user.email "action@github.com"
+        git add README.md
+        git commit -m "Update README from templates.md"
+        git push
