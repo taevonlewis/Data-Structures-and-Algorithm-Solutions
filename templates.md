@@ -1,4 +1,5 @@
 ## Coding Templates
+
 <details>
 <summary>Click to expand!</summary>
   
