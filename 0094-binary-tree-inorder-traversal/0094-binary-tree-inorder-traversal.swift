@@ -15,26 +15,15 @@
  */
 class Solution {
     func inorderTraversal(_ root: TreeNode?) -> [Int] {
-        if root == nil {
-            return []
+        var result: [Int] = []
+        func rec(_ node: TreeNode?) {
+            guard let node = node else { return }
+            rec(node.left)
+            result.append(node.val)
+            rec(node.right)
         }
 
-        var res: [Int] = []
-
-        dfs(root, &res)
-        
-        return res
-    }
-
-    func dfs(_ root: TreeNode?, _ arr: inout [Int]) -> [Int] {
-        if root == nil {
-            return arr
-        }
-
-        dfs(root?.left, &arr)
-        arr.append(root!.val)
-        dfs(root?.right, &arr)
-
-        return arr
+        rec(root)
+        return result
     }
 }
