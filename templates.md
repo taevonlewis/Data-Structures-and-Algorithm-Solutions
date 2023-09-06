@@ -10,7 +10,6 @@
 
 
 ## Stack (Last-In-First-Out or LIFO)
-
 A stack implemented using an array.
 
 ```swift
@@ -40,7 +39,6 @@ class Stack<T> {
 - **pop()**: Removes and returns the top element.
 
 ## Queue (FIRST-IN-FIRST-OUT or FIFO)
-
 A basic queue implementation.
 
 ```swift
