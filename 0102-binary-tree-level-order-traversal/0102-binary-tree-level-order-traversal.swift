@@ -26,7 +26,7 @@ class Solution {
 
         while !queue.isEmpty {
             var arr: [Int] = []
-            
+
             for _ in 0...queue.count - 1 {
                 let curr = queue.removeFirst()
 
@@ -34,18 +34,16 @@ class Solution {
                     arr.append(val)
                 }
 
-                if curr?.left != nil {
-                    queue.append(curr?.left)
+                if let left = curr?.left {
+                    queue.append(left)
                 }
 
-                if curr?.right != nil {
-                    queue.append(curr?.right)
+                if let right = curr?.right {
+                    queue.append(right)
                 }
             }
-
-            if !arr.isEmpty {
+            
                 res.append(arr)
-            }
         }
 
         return res
