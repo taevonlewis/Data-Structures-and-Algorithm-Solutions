@@ -1,20 +1,23 @@
 class Solution {
     func findMin(_ nums: [Int]) -> Int {
-        var low: Int = 0
-        var high: Int = nums.count - 1
+        var start: Int = 0
+        var end: Int = nums.count - 1
+        var min: Int = Int.max
 
-        while low < high {
-            let mid = (low + high) / 2
+        while start <= end {
+            let mid = (start + end) / 2
 
-            if nums[mid] > nums[high] {
-                low = mid + 1
-            } else if nums[mid] < nums[high] {
-                high = mid
+            if nums[mid] < min { 
+                min = nums[mid] 
+            }
+
+            if nums[mid] > nums[end] {
+                start = mid + 1
             } else {
-                high -= 1
+                end = mid - 1
             }
         }
 
-        return nums[low]
+        return min
     }
 }
