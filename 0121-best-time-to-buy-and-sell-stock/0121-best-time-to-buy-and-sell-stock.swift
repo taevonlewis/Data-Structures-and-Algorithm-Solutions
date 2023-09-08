@@ -1,8 +1,8 @@
 class Solution {
     func maxProfit(_ prices: [Int]) -> Int {
-        var i = 0
-        var j = 1
-        var maxProfit = 0
+        var maxProfit: Int = 0
+        var i: Int = 0
+        var j: Int = 1
 
         while j < prices.count {
             if prices[i] < prices[j] {
@@ -14,6 +14,7 @@ class Solution {
 
             j += 1
         }
+
         return maxProfit
     }
 }
