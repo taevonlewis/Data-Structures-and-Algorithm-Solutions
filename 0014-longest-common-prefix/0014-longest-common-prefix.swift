@@ -1,11 +1,7 @@
 class Solution {
     func longestCommonPrefix(_ strs: [String]) -> String {
-        if strs.isEmpty {
-            return ""
-        }
-
-        let arr = strs.map { Array($0) }
-        let firstStr = arr[0]
+        var arr = strs.map { Array($0) }
+        var firstStr = arr[0]
 
         for i in 0..<firstStr.count {
             let char = firstStr[i]
