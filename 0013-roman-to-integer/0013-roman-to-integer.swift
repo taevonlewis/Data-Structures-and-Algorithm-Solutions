@@ -1,6 +1,6 @@
 class Solution {
     func romanToInt(_ s: String) -> Int {
-        let roman: [Character: Int] = [
+        var roman: [Character: Int] = [
             "I": 1,
             "V": 5,
             "X": 10,
@@ -16,8 +16,8 @@ class Solution {
         }
 
         for i in 1..<arr.count {
-            let prev = roman[arr[i - 1]]
-            let curr = roman[arr[i]]
+            var prev = roman[arr[i - 1]]
+            var curr = roman[arr[i]]
 
             if prev != nil, curr != nil, prev! < curr! {
                 res += curr! - (2 * prev!)
