@@ -1,7 +1,7 @@
 class Solution {
     func maxSubArray(_ nums: [Int]) -> Int {
-        var maxSub = nums[0]
-        var currSum = 0
+        var maxSub: Int = nums[0]
+        var currSum: Int = 0
 
         for num in nums {
             if currSum < 0 {
