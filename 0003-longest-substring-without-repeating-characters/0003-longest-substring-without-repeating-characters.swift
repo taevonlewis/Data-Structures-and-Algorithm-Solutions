@@ -1,21 +1,17 @@
 class Solution {
-    func lengthOfLongestSubstring(_ str: String) -> Int {
-        guard str.count > 0 else {
-            return 0
-        }
-
-        let s = Array(str)
+    func lengthOfLongestSubstring(_ s: String) -> Int {
+        var arr = Array(s)
         var window: Set<Character> = []
-        var left: Int = 0
         var length: Int = 0
-
-        for right in 0..<s.count {
-            while window.contains(s[right]) {
-                window.remove(s[left])
+        var left: Int = 0
+        
+        for right in 0..<arr.count {
+            while window.contains(arr[right]) {
+                window.remove(arr[left])
                 left += 1
             }
 
-            window.insert(s[right])
+            window.insert(arr[right])
             length = max(length, right - left + 1)
         }
 
