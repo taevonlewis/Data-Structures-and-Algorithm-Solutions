@@ -1,5 +1,9 @@
 class Solution {
     func lengthOfLongestSubstring(_ s: String) -> Int {
+        guard s.count > 0 else {
+            return s.count
+        }
+        
         var arr = Array(s)
         var window: Set<Character> = []
         var length: Int = 0
