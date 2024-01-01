@@ -1,19 +1,43 @@
 {
   "version": "0.2.0",
   "configurations": [
-      {
-          "name": "C/C++: clang++ run active file",
-          "type": "cppdbg",
-          "request": "launch",
-          "program": "${fileDirname}/${fileBasenameNoExtension}",
-          "args": [],
-          "stopAtEntry": false,
-          "cwd": "${workspaceFolder}",
-          "environment": [],
-          "externalConsole": false,
-          "MIMode": "lldb",
-          "preLaunchTask": "C/C++: clang++ build active file",
-          "internalConsoleOptions": "openOnSessionStart"
-      }
+    {
+      "name": "C/C++: clang++ run active file",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "C/C++: clang++ build active file",
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:Data-Structures-and-Algorithm-Solutions}/fully-written-solutions/practice/swift",
+      "name": "Debug swift (fully-written-solutions/practice/swift)",
+      "program": "${workspaceFolder:Data-Structures-and-Algorithm-Solutions}/fully-written-solutions/practice/swift/.build/debug/swift",
+      "preLaunchTask": "swift: Build Debug swift (fully-written-solutions/practice/swift)"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:Data-Structures-and-Algorithm-Solutions}/fully-written-solutions/practice/swift",
+      "name": "Release swift (fully-written-solutions/practice/swift)",
+      "program": "${workspaceFolder:Data-Structures-and-Algorithm-Solutions}/fully-written-solutions/practice/swift/.build/release/swift",
+      "preLaunchTask": "swift: Build Release swift (fully-written-solutions/practice/swift)"
+    }
   ]
 }

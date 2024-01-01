@@ -4,17 +4,44 @@
 <summary>Click to expand!</summary>
   
 ### Table of Contents
-1. [Stack](#stack)
-2. [Queue](#queue)
-3. [Linked List](#linked-list)
+1. [Solution Test Function](#solution-test-function)
+2. [Stack](#stack)
+3. [Queue](#queue)
+4. [Linked List](#linked-list)
     - [Singly Linked List](#singly-linked-list)
     - [Doubly Linked List](#doubly-linked-list)
-4. [Trees](#trees)
+5. [Trees](#trees)
     - [Binary Tree](#binary-tree)
     - [Trie](#trie)
     - [Segment Tree](#segment-tree)
 6. [Heap/Priority Queue](#heappriority-queue)
 
+### Solution Test Function
+
+A function that can be used to manually test a problem's solution. It needs to be slightly modified for the specific problem.
+
+```swift
+func test() {
+    let sol = Solution()
+
+    // Replace with an array of tuples, each containing the input and expected output.
+    // e.g. [(input1, expected1), (input2, expected2), ...]
+    let testCases = [
+        // Add your test cases here
+    ]
+    
+    for (i, testCase) in testCases.enumerated() {
+        let (input, expected) = testCase
+
+        // Replace the following line to call the method you are testing.
+        // e.g. let result = sol.someMethod(input)
+        let result =  sol.YourMethodHere(input)
+
+        assert(result == expected, "Test case \(i + 1) failed. Expected \(expected), got \(result)")
+        print("Test case \(i + 1) passed.")
+    }
+}
+```
 
 ### Stack
 
