@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-main",
+      "appliesTo": "fully-written-solutions/practice/swift/Sources/main.swift",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-main",
+      "appliesTo": "fully-written-solutions/practice/swift/Sources/main.swift",
+      "type": "launch"
+    }
+  ]
+}
