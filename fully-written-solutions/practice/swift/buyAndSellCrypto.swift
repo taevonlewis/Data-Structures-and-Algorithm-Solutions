@@ -1,15 +1,14 @@
 func maxProfit(_ prices: [Int]) -> Int {
     var maxAmount: Int = 0
-    var lowNum: Int = prices[0]
+    var left: Int = 0
+    var right: Int = 0
 
-    for idx in 1..<prices.count {
-        let num = prices[idx]
-
-        if num < lowNum {
-            lowNum = num
-        } else {
-            maxAmount = max(maxAmount, num - lowNum)
+    for right in 1..<prices.count {
+        if prices[right] < prices[left] {
+            left = right
         }
+
+        maxAmount = max(maxAmount, prices[right] - prices[left])
     }
 
     return maxAmount
