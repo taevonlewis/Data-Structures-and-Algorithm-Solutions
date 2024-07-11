@@ -14,5 +14,5 @@ func maxProfit(_ prices: [Int]) -> Int {
     return maxAmount
 }
 
-print(maxProfit([10,1,5,6,7,1]))
-print(maxProfit([10,8,7,5,2]))
+// print(maxProfit([10,1,5,6,7,1]))
+// print(maxProfit([10,8,7,5,2]))

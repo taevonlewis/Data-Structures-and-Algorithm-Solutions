@@ -55,6 +55,6 @@ func findAnagramKey(_ str: String) -> String {
     return key
 }
 
-print(groupAnagrams(["baa", "aab", "cab", "bad", "abd", "dab"]))
+// print(groupAnagrams(["baa", "aab", "cab", "bad", "abd", "dab"]))
 // print(groupAnagrams(["aab", "aba", "abb", "aba"]))
 // print(groupAnagrams(["a"]))

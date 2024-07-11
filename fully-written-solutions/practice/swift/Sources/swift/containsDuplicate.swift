@@ -12,6 +12,6 @@ func containsDuplicate(_ arr: [Int]) -> Bool {
     return false
 }
 
-print(containsDuplicate([9,2,3,9]))
-print(containsDuplicate([5,4,5,9]))
-print(containsDuplicate([9,2,3,7]))
+// print(containsDuplicate([9,2,3,9]))
+// print(containsDuplicate([5,4,5,9]))
+// print(containsDuplicate([9,2,3,7]))

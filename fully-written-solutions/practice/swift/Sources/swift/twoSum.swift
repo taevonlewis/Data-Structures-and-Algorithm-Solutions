@@ -14,6 +14,6 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
     return []
 }
 
-print(twoSum([3,4,5,6], 7))
-print(twoSum([4,5,6], 10))
-print(twoSum([5,5], 10))
+// print(twoSum([3,4,5,6], 7))
+// print(twoSum([4,5,6], 10))
+// print(twoSum([5,5], 10))

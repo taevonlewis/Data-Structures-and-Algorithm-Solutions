@@ -35,7 +35,7 @@ func validAnagram(_ s: String, _ t: String) -> Bool {
     return true
 }
 
-print(validAnagram("keen", "knee"))
-print(validAnagram("baa", "bba"))
-print(validAnagram("car", "arc"))
-print(validAnagram("rat", "glass"))
+// print(validAnagram("keen", "knee"))
+// print(validAnagram("baa", "bba"))
+// print(validAnagram("car", "arc"))
+// print(validAnagram("rat", "glass"))

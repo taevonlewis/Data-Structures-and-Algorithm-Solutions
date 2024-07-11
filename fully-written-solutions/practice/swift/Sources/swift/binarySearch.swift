@@ -19,6 +19,6 @@ func search(_ nums: [Int], _ target: Int) -> Int {
     return -1
 }
 
-print(search([-1,0,3,5,9,12], 9))
-print(search([-1,0,3,5,9,12], 0))
-print(search([-1,0,3,5,9,12], 2))
+// print(search([-1,0,3,5,9,12], 9))
+// print(search([-1,0,3,5,9,12], 0))
+// print(search([-1,0,3,5,9,12], 2))

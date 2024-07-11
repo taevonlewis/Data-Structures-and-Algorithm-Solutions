@@ -18,6 +18,6 @@ func isValid(_ str: String) -> Bool {
     return st.isEmpty
 }
 
-print(isValid("()[]{}"))
-print(isValid("([{}])"))
-print(isValid("(]"))
+// print(isValid("()[]{}"))
+// print(isValid("([{}])"))
+// print(isValid("(]"))

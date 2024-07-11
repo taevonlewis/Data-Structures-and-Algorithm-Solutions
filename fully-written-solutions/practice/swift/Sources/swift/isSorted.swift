@@ -12,6 +12,6 @@ func isSorted(_ arr: [Int]) -> Bool {
     return true
 }
 
-print(isSorted([1,2,3]))
-print(isSorted([1,2,2,3]))
-print(isSorted([2,1,2,3]))
+// print(isSorted([1,2,3]))
+// print(isSorted([1,2,2,3]))
+// print(isSorted([2,1,2,3]))

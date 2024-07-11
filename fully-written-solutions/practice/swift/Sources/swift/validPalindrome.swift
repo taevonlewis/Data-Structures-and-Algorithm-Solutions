@@ -28,6 +28,6 @@ extension Character {
     }
 }
 
-print(validPalindrome("racecar"))
-print(validPalindrome("kayak"))
-print(validPalindrome("doug"))
+// print(validPalindrome("racecar"))
+// print(validPalindrome("kayak"))
+// print(validPalindrome("doug"))
