@@ -15,8 +15,12 @@
  */
 class Solution {
     func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool {
-        if p == nil && q == nil {
+        guard !(p == nil && q == nil) else {
             return true
+        }
+        
+        guard p != nil && q != nil else {
+            return false
         }
 
         if p?.val != q?.val {
