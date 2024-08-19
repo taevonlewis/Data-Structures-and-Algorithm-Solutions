@@ -19,10 +19,23 @@ class Solution {
             return nil
         }
 
-        let leftNode = invertTree(root.left)
-        let rightNode = invertTree(root.right)
-        root.left = rightNode
-        root.right = leftNode
+        var queue: [TreeNode] = [root]
+
+        while !queue.isEmpty {
+            var curr: TreeNode = queue.removeFirst()
+
+            let left = curr.left
+            curr.left = curr.right
+            curr.right = left
+
+            if let leftNode = curr.left {
+                queue.append(leftNode)
+            }
+
+            if let rightNode = curr.right {
+                queue.append(rightNode)
+            }
+        }
 
         return root
     }
