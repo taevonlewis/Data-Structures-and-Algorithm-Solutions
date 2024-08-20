@@ -22,7 +22,7 @@ class Solution {
         if isSameTree(root, subRoot) {
             return true
         }
-
+        
         return isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot)
     }
 
@@ -35,6 +35,6 @@ class Solution {
             return false
         }
 
-        return p!.val == q!.val && isSameTree(p?.left, q?.left) && isSameTree(p?.right, q?.right)
+        return p?.val == q?.val && isSameTree(p?.left, q?.left) && isSameTree(p?.right, q?.right)
     }
 }
