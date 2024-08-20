@@ -14,26 +14,23 @@
  * }
  */
 class Solution {
+    private var maxDiameter: Int = 0
     func diameterOfBinaryTree(_ root: TreeNode?) -> Int {
-        guard let root = root else { return 0 }
+        _ = depth(root)
 
-        var globalMax: Int = 0
-        maxDepth(root, maxx: &globalMax)
-
-        return globalMax
+        return maxDiameter
     }
 
-    func maxDepth(_ node: TreeNode?, maxx: inout Int) -> Int {
+    func depth(_ node: TreeNode?) -> Int {
         guard let node = node else {
             return 0
         }
 
-        let leftMax = maxDepth(node.left, maxx: &maxx)
-        let rightMax = maxDepth(node.right, maxx: &maxx)
+        let leftDepth = depth(node.left)
+        let rightDepth = depth(node.right)
 
-        let diameter = leftMax + rightMax
-        maxx = max(maxx, diameter)
+        maxDiameter = max(maxDiameter, leftDepth + rightDepth)
 
-        return 1 + max(leftMax, rightMax)
+        return max(leftDepth, rightDepth) + 1
     }
 }
