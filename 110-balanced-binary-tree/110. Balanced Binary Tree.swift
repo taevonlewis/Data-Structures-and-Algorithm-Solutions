@@ -15,7 +15,7 @@
  */
 class Solution {
     func isBalanced(_ root: TreeNode?) -> Bool {
-        return checkHeight(root) != -1
+       return checkHeight(root) != -1 
     }
 
     func checkHeight(_ node: TreeNode?) -> Int {
@@ -36,7 +36,7 @@ class Solution {
         if abs(leftHeight - rightHeight) > 1 {
             return -1
         }
-            
+
         return max(leftHeight, rightHeight) + 1
     }
 }
