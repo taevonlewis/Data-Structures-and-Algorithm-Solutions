@@ -36,7 +36,7 @@ class Solution {
         if abs(leftHeight - rightHeight) > 1 {
             return -1
         }
-
+            
         return max(leftHeight, rightHeight) + 1
     }
 }
