@@ -23,12 +23,12 @@ class Solution {
             return 0
         }
 
-        let leftHeight = checkHeight(node.left)
+        let leftHeight: Int = checkHeight(node.left)
         if leftHeight == -1 {
             return -1
         }
 
-        let rightHeight = checkHeight(node.right)
+        let rightHeight: Int = checkHeight(node.right) 
         if rightHeight == -1 {
             return -1
         }
