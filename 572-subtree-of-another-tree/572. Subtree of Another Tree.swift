@@ -19,22 +19,22 @@ class Solution {
             return false
         }
 
-        if isSameTree(root, subRoot) {
+        if isSame(root, subRoot) {
             return true
         }
 
         return isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot)
     }
 
-    func isSameTree(_ root: TreeNode?, _ subRoot: TreeNode?) -> Bool {
-        guard !(root == nil && subRoot == nil) else {
+    func isSame(_ node: TreeNode?, _ subRoot: TreeNode?) -> Bool {
+        guard !(node == nil && subRoot == nil) else {
             return true
-        }
+        } 
 
-        guard root != nil && subRoot != nil else {
+        guard node != nil && subRoot != nil else {
             return false
         }
 
-        return root?.val == subRoot?.val && isSameTree(root?.left, subRoot?.left) && isSameTree(root?.right, subRoot?.right)
+        return node?.val == subRoot?.val && isSame(node?.left, subRoot?.left) && isSame(node?.right, subRoot?.right)
     }
 }
