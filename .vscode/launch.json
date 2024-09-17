@@ -18,9 +18,9 @@
                 "swift"
             ],
             "args": [],
-            "cwd": "${workspaceFolder:Data-Structures-and-Algorithm-Solutions}\\fully-written-solutions",
+            "cwd": "${workspaceFolder:Data-Structures-and-Algorithm-Solutions}/fully-written-solutions",
             "name": "Debug fully-written-solutions (fully-written-solutions)",
-            "program": "${workspaceFolder:Data-Structures-and-Algorithm-Solutions}\\fully-written-solutions\\.build\\debug\\fully-written-solutions.exe",
+            "program": "${workspaceFolder:Data-Structures-and-Algorithm-Solutions}/fully-written-solutions/.build/debug/fully-written-solutions",
             "preLaunchTask": "swift: Build Debug fully-written-solutions (fully-written-solutions)"
         },
         {
@@ -30,10 +30,34 @@
                 "swift"
             ],
             "args": [],
-            "cwd": "${workspaceFolder:Data-Structures-and-Algorithm-Solutions}\\fully-written-solutions",
+            "cwd": "${workspaceFolder:Data-Structures-and-Algorithm-Solutions}/fully-written-solutions",
             "name": "Release fully-written-solutions (fully-written-solutions)",
-            "program": "${workspaceFolder:Data-Structures-and-Algorithm-Solutions}\\fully-written-solutions\\.build\\release\\fully-written-solutions.exe",
+            "program": "${workspaceFolder:Data-Structures-and-Algorithm-Solutions}/fully-written-solutions/.build/release/fully-written-solutions",
             "preLaunchTask": "swift: Build Release fully-written-solutions (fully-written-solutions)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:Data-Structures-and-Algorithm-Solutions}/fully-written-solutions",
+            "name": "Debug FullyWrittenSolutions (fully-written-solutions)",
+            "program": "${workspaceFolder:Data-Structures-and-Algorithm-Solutions}/fully-written-solutions/.build/debug/FullyWrittenSolutions",
+            "preLaunchTask": "swift: Build Debug FullyWrittenSolutions (fully-written-solutions)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:Data-Structures-and-Algorithm-Solutions}/fully-written-solutions",
+            "name": "Release FullyWrittenSolutions (fully-written-solutions)",
+            "program": "${workspaceFolder:Data-Structures-and-Algorithm-Solutions}/fully-written-solutions/.build/release/FullyWrittenSolutions",
+            "preLaunchTask": "swift: Build Release FullyWrittenSolutions (fully-written-solutions)"
         }
     ]
   }

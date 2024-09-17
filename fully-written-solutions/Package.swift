@@ -5,14 +5,36 @@ import PackageDescription
 
 let package = Package(
     name: "fully-written-solutions",
-    dependencies: [
-        .package(url: "https://github.com/apple/swift-format.git", branch: "release/5.8"),
-    ],
+    // dependencies: [
+    //     .package(url: "https://github.com/apple/swift-format.git", branch: "release/5.8"),
+    // ],
     targets: [
         .executableTarget(
             name: "fully-written-solutions",
+            dependencies: ["apple", "misc", "utilities"],
             path: "Sources",
-            sources: ["main.swift", "apple"]
+            exclude: [
+                "leetcode/cpp",
+                "leetcode/python",
+                "leetcode/swift",
+            ],
+            sources: ["main.swift"]
+        ),
+        .target(
+            name: "apple",
+            path: "Sources/apple"
+        ),
+        .target(
+            name: "misc",
+            path: "Sources/misc"
+        ),
+        .target(
+            name: "utilities",
+            path: "Sources/utilities"
         )
+        // .target(
+        //     name: "leetcode",
+        //     path: "Sources/leetcode"
+        // ),
     ]
 )
