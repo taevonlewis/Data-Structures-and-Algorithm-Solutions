@@ -63,4 +63,4 @@ func organizeFiles(directory: String) {
 }
 
 // organizeFiles(directory: "/Users/tizzymatic/Documents/GitHub/Data-Structures-and-Algorithm-Solutions/hackerrank")
-organizeDirectories(directory: "/Volumes/T7-Shield/Data-Structures-and-Algorithm-Solutions/leetcode/swift")
+// organizeDirectories(directory: "/Users/taevonlewis/Documents/repos/Data-Structures-and-Algorithm-Solutions")
