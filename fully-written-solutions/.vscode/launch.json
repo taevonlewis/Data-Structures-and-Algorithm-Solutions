@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:fully-written-solutions}",
+            "name": "Debug fully-written-solutions",
+            "program": "${workspaceFolder:fully-written-solutions}/.build/debug/fully-written-solutions",
+            "preLaunchTask": "swift: Build Debug fully-written-solutions"
+        },
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:fully-written-solutions}",
+            "name": "Release fully-written-solutions",
+            "program": "${workspaceFolder:fully-written-solutions}/.build/release/fully-written-solutions",
+            "preLaunchTask": "swift: Build Release fully-written-solutions"
+        }
+    ]
+}
