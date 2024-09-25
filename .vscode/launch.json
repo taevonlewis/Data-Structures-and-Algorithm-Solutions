@@ -12,7 +12,7 @@
             "console": "integratedTerminal"
         },
         {
-            "type": "lldb",
+            "type": "swift-lldb",
             "request": "launch",
             "sourceLanguages": [
                 "swift"
@@ -24,7 +24,7 @@
             "preLaunchTask": "swift: Build Debug fully-written-solutions (fully-written-solutions)"
         },
         {
-            "type": "lldb",
+            "type": "swift-lldb",
             "request": "launch",
             "sourceLanguages": [
                 "swift"
