@@ -4,17 +4,56 @@
 <summary>Click to expand!</summary>
   
 ### Table of Contents
-1. [Solution Test Function](#solution-test-function)
-2. [Stack](#stack)
-3. [Queue](#queue)
-4. [Linked List](#linked-list)
+1. [Pseudocode](#pseudocode)
+2. [Solution Test Function](#solution-test-function)
+3. [Stack](#stack)
+4. [Queue](#queue)
+5. [Linked List](#linked-list)
     - [Singly Linked List](#singly-linked-list)
     - [Doubly Linked List](#doubly-linked-list)
-5. [Trees](#trees)
+6. [Trees](#trees)
     - [Binary Tree](#binary-tree)
     - [Trie](#trie)
     - [Segment Tree](#segment-tree)
-6. [Heap/Priority Queue](#heappriority-queue)
+7. [Heap/Priority Queue](#heappriority-queue)
+
+### Pseudocode
+
+/*
+    Restate the Problem: 
+        Given an [input_type], find/return [what is asked for].
+
+    Identify Inputs and Outputs:
+        Input: [description of inputs, data type]
+        Output: [description of outputs, data type]
+
+    Map Inputs to Outputs:
+        For each input, think:
+         - How can this be transformed or processed to lead to the output?
+
+    Outline the Constraints and Edge Cases:
+        Constraints: [description of constraints]
+        Edge cases: [description of edge cases]
+
+    Choose an Approach (High-Level Plan):
+        Approach:
+        - Step 1: [Do this first]
+        - Step 2: [Then do this]
+        - Final Step: [Return the result]
+
+        Time complexity: O(...)
+        Space complexity: O(...)
+
+    Create a Plan and Break it into Steps:
+        Plan:
+        1. [Process the first input]
+        2. [Iterate through the inputs and do something]
+        3. [Return or print the result]
+
+    Check for Edge Cases:
+        If [edge case]:
+            [Handle the edge case]
+*/
 
 ### Solution Test Function
 
