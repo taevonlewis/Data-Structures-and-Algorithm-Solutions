@@ -199,7 +199,7 @@ The 'fully-written-solutions' folder contains problems tackled from scratch. Her
 
 ### Pseudocode
 
-/*
+```
     Restate the Problem: 
         Given an [input_type], find/return [what is asked for].
 
@@ -233,7 +233,7 @@ The 'fully-written-solutions' folder contains problems tackled from scratch. Her
     Check for Edge Cases:
         If [edge case]:
             [Handle the edge case]
-*/
+```
 
 ### Solution Test Function
 
