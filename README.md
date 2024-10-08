@@ -12,7 +12,7 @@ This repository is a comprehensive collection of solutions to coding problems fr
 
 The problems in this repository have been solved using:
 
-- Swift (mainly)
+- Swift (main language) 
 - C++
 - Python
   
